@@ -59,7 +59,7 @@ log = "0.4"
 lazy_static = "1.4"
 
 
-libmcaptcha = { version = "0.2.3", git = "https://github.com/mCaptcha/libmcaptcha", features = ["full"], tag ="0.2.3" }
+libmcaptcha = { version = "0.2.3", git = "https://github.com/ngi-nix/libmcaptcha", features = ["full"], branch ="fix-pow_sha256-version" }
 #libmcaptcha = { branch = "master", git = "https://github.com/mCaptcha/libmcaptcha", features = ["full"] }
 #libmcaptcha = { path = "../libmcaptcha", features = ["full"]}
 
@@ -72,8 +72,8 @@ mime = "0.3.16"
 num_cpus = "1.13.1"
 
 lettre = { version = "0.10.0-rc.3", features = [
-"builder", 
-"tokio1", 
+"builder",
+"tokio1",
 "tokio1-native-tls",
 "smtp-transport"
 ]}

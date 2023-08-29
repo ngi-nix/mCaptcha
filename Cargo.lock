@@ -1676,7 +1676,7 @@ checksum = "f7012b1bbb0719e1097c47611d3898568c546d597c2e74d66f6087edd5233ff4"
 [[package]]
 name = "libmcaptcha"
 version = "0.2.3"
-source = "git+https://github.com/mCaptcha/libmcaptcha?tag=0.2.3#6bc0d11f8839d18c4d930cac0c0b86505ed1b2f6"
+source = "git+https://github.com/ngi-nix/libmcaptcha?branch=fix-pow_sha256-version#33eeff07f5281a693c75bd07d9bb75534ef48da3"
 dependencies = [
  "actix",
  "crossbeam-channel",
@@ -1684,7 +1684,7 @@ dependencies = [
  "derive_more",
  "log",
  "num_cpus",
- "pow_sha256 0.3.1 (git+https://github.com/mcaptcha/pow_sha256)",
+ "pow_sha256",
  "pretty_env_logger",
  "rand",
  "redis",
@@ -1809,7 +1809,7 @@ dependencies = [
  "mime_guess",
  "num_cpus",
  "openssl",
- "pow_sha256 0.3.1 (git+https://github.com/mcaptcha/pow_sha256?tag=0.3.1)",
+ "pow_sha256",
  "pretty_env_logger",
  "rand",
  "rust-embed",
@@ -2291,18 +2291,6 @@ dependencies = [
 name = "pow_sha256"
 version = "0.3.1"
 source = "git+https://github.com/mcaptcha/pow_sha256?tag=0.3.1#3b4e28706a8946987ba02f98e1f816d9fa156dad"
-dependencies = [
- "bincode",
- "derive_builder",
- "num",
- "serde 1.0.147",
- "sha2",
-]
-
-[[package]]
-name = "pow_sha256"
-version = "0.3.1"
-source = "git+https://github.com/mcaptcha/pow_sha256#148f1cb70d19114d1340661a77b2b679e95715f6"
 dependencies = [
  "bincode",
  "derive_builder",
